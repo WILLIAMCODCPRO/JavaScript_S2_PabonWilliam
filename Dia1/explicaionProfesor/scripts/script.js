@@ -29,6 +29,17 @@ console.log(typeof booleanito1);
 if(booleanito1 == true){
     console.log("Es verdadero !!!!!");
 }else {
-    console.log("No es verdadero :sadfeis:")
+    console.log("No es verdadero :sadfeis:");
+}
+
+//Bucles
+for(i = 0; i < 4; i = i + 1){
+    console.log("Wenas");
+}
+
+holi = true
+while(holi == false){
+    console.log("Wenas");
+    holi = false
 }
 // Desarrollado por : William Santiago Pabon Ardila - C.C 1.006.798.412

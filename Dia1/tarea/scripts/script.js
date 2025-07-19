@@ -16,17 +16,13 @@ while(boolianito = true) {
 `));
  
  if(menu == 1) {
-    let menuRegistrarNuevoGasto = parseInt(prompt(`
+    let montoDelGasto = parseInt(prompt(`
     =============================================
             Registrar Nuevo Gasto
     =============================================
     Ingrese la información del gasto:
 
     - Monto del gasto:
-    - Categoría (ej. comida, transporte, entretenimiento, otros):
-    - Descripción (opcional):
-
-    Ingrese 'S' para guardar o 'C' para cancelar.
     =============================================
         `))
  }

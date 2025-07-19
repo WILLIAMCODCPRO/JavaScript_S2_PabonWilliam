@@ -1,7 +1,7 @@
 let boolianito = true;
 
 while(boolianito = true) {
- menu = prompt(`
+ let menu = parseInt(prompt(`
  =============================================
           Simulador de Gasto Diario
  =============================================
@@ -13,8 +13,24 @@ while(boolianito = true) {
  4. Generar reporte de gastos
  5. Salir
  =============================================
-`);
+`));
  
+ if(menu == 1) {
+    let menuRegistrarNuevoGasto = parseInt(prompt(`
+    =============================================
+            Registrar Nuevo Gasto
+    =============================================
+    Ingrese la información del gasto:
+
+    - Monto del gasto:
+    - Categoría (ej. comida, transporte, entretenimiento, otros):
+    - Descripción (opcional):
+
+    Ingrese 'S' para guardar o 'C' para cancelar.
+    =============================================
+        `))
+ }
+
  
  
 }

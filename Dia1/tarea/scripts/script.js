@@ -47,6 +47,8 @@ while(boolianito = true) {
 
         descripcion = "No hay descripcion";
      }
+
+     guardar = prompt("¿Quieres guardar el gasto? s/n")
  }
 
  

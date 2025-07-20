@@ -1,4 +1,5 @@
 import {registrarNuevosGastos, gastos} from "../funciones/funcionRegistrarNuevoGasto.js";
+import { listarTodosLosGastos } from "../funciones/funcionesListarGastos.js";
 let boolianito = true;
 
 
@@ -69,7 +70,7 @@ while(boolianito == true) {
 
  else if(menu == 2){
 
-   parseInt(prompt(`
+   let menuListarGastos = parseInt(prompt(`
 
         =============================================
                        Listar Gastos
@@ -82,7 +83,14 @@ while(boolianito == true) {
         4. Regresar al menú principal
         =============================================
        
-      `))
+      `));
+
+   if(menuListarGastos == 1){
+      listarTodosLosGastos(gastos)
+   } 
+
+
+   
 
  }
 

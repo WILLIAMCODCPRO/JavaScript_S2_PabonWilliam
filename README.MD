@@ -1,1 +1,1 @@
-# JavaScrip_S2_PabonWilliam.
+# JavaScript_S2_PabonWilliam.

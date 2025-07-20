@@ -1,7 +1,7 @@
-let boolianito = true;
+boolianito = true;
 
 while(boolianito = true) {
- let menu = parseInt(prompt(`
+ menu = parseInt(prompt(`
  =============================================
           Simulador de Gasto Diario
  =============================================
@@ -16,7 +16,7 @@ while(boolianito = true) {
 `));
  
  if(menu == 1) {
-    let montoDelGasto = parseInt(prompt(`
+    montoDelGasto = parseInt(prompt(`
     =============================================
             Registrar Nuevo Gasto
     =============================================
@@ -24,7 +24,29 @@ while(boolianito = true) {
 
     - Monto del gasto:
     =============================================
-        `))
+        `));
+
+    categoria = prompt(`
+    =============================================
+            Registrar Nuevo Gasto
+    =============================================
+    Ingrese la información del gasto:
+
+    - Categoría (ej. comida, transporte, entretenimiento):
+    =============================================
+        `);
+
+     descripcion = prompt("¿Deseas agregar una descripcion? (s/n)");
+     if(descripcion == "s"){
+        
+        descripcion = prompt("Escribe tu descripcion");
+
+     }
+
+     else if(descripcion == "n"){
+
+        descripcion = "No hay descripcion";
+     }
  }
 
  

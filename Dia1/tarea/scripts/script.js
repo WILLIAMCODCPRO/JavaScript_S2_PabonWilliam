@@ -60,9 +60,28 @@ while(boolianito == true) {
      }
      
      else if(guardar == "n"){
-      boolianito = true
+      boolianito = true;
      }
      
+ }
+
+ else if(menu == 2){
+
+   parseInt(prompt(`
+
+        =============================================
+                       Listar Gastos
+        =============================================
+        Seleccione una opción para filtrar los gastos:
+
+        1. Ver todos los gastos
+        2. Filtrar por categoría
+        3. Filtrar por rango de fechas
+        4. Regresar al menú principal
+        =============================================
+       
+      `))
+
  }
 
  

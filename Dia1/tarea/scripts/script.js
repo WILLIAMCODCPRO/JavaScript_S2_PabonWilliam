@@ -1,7 +1,9 @@
-boolianito = true;
+import {registrarNuevosGastos, gastos} from "../funciones/funcionRegistrarNuevoGasto.js";
+let boolianito = true;
 
-while(boolianito = true) {
- menu = parseInt(prompt(`
+
+while(boolianito == true) {
+ let menu = parseInt(prompt(`
  =============================================
           Simulador de Gasto Diario
  =============================================
@@ -16,7 +18,7 @@ while(boolianito = true) {
 `));
  
  if(menu == 1) {
-    montoDelGasto = parseInt(prompt(`
+    let montoDelGasto = parseInt(prompt(`
     =============================================
             Registrar Nuevo Gasto
     =============================================
@@ -26,7 +28,7 @@ while(boolianito = true) {
     =============================================
         `));
 
-    categoria = prompt(`
+    let categoria = prompt(`
     =============================================
             Registrar Nuevo Gasto
     =============================================
@@ -36,7 +38,7 @@ while(boolianito = true) {
     =============================================
         `);
 
-     descripcion = prompt("¿Deseas agregar una descripcion? (s/n)");
+     let descripcion = prompt("¿Deseas agregar una descripcion? (s/n)");
      if(descripcion == "s"){
         
         descripcion = prompt("Escribe tu descripcion");
@@ -48,7 +50,19 @@ while(boolianito = true) {
         descripcion = "No hay descripcion";
      }
 
-     guardar = prompt("¿Quieres guardar el gasto? s/n")
+     let guardar = prompt("¿Quieres guardar el gasto? s/n");
+
+     if(guardar == "s"){
+
+      registrarNuevosGastos(montoDelGasto, categoria, descripcion);
+      
+
+     }
+     
+     else if(guardar == "n"){
+      boolianito = true
+     }
+     
  }
 
  

@@ -54,7 +54,9 @@ while(boolianito == true) {
 
      if(guardar == "s"){
 
-      registrarNuevosGastos(montoDelGasto, categoria, descripcion);
+      let fecha = new Date().toLocaleDateString();
+
+      registrarNuevosGastos(montoDelGasto, categoria, descripcion, fecha);
       
 
      }

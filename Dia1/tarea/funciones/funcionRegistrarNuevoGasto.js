@@ -3,12 +3,13 @@ let gastos = [];
 
 
 
-function registrarNuevosGastos(montoDelGasto, categoria, descripcion ) {
+function registrarNuevosGastos(montoDelGasto, categoria, descripcion, fecha ) {
 
     let nuevoGasto = {
         monto : montoDelGasto,
         categoria : categoria,
-        descripcion : descripcion
+        descripcion : descripcion,
+        Fecha : fecha
     };
 
     gastos.push(nuevoGasto)

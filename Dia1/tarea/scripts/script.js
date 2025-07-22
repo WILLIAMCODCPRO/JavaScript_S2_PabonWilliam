@@ -29,15 +29,37 @@ while(boolianito == true) {
     =============================================
         `));
 
-    let categoria = prompt(`
+    let categoria = parseInt(prompt(`
     =============================================
             Registrar Nuevo Gasto
     =============================================
     Ingrese la información del gasto:
 
-    - Categoría (ej. comida, transporte, entretenimiento):
+    - Categoría (1.comida 2.transporte 3.entretenimiento 4.otros):
     =============================================
-        `);
+        `));
+
+        if(categoria === 1){
+
+         categoria = "comida";
+        }
+
+        else if(categoria === 2){
+         categoria = "transporte"
+
+        }
+
+        else if(categoria === 3){
+         categoria = "entretenimiento"
+
+        }
+
+        else if(categoria === 4){
+         categoria = "otros"
+
+        }
+
+
 
      let descripcion = prompt("¿Deseas agregar una descripcion? (s/n)");
      if(descripcion == "s"){

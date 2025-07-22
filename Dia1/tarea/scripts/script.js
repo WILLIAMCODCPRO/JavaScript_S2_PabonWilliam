@@ -95,7 +95,7 @@ while(boolianito == true) {
  } 
 
 else if(menu === 3){
-   menuCalcularTotalGastos = parseInt(prompt(`
+   let menuCalcularTotalGastos = parseInt(prompt(`
            =============================================
                 Calcular Total de Gastos
            =============================================
@@ -111,7 +111,7 @@ else if(menu === 3){
 }
 
 else if(menu === 4){
-   menuGenerarReporteDeGastos = parseInt(prompt(`
+   let menuGenerarReporteDeGastos = parseInt(prompt(`
         =============================================
                Generar Reporte de Gastos
         =============================================
@@ -121,8 +121,20 @@ else if(menu === 4){
         2. Reporte semanal
         3. Reporte mensual
         4. Regresar al menú principal
-=============================================
+       =============================================
       `));
+}
+
+else if(menu === 5){
+   let salir = prompt("¿Desea salir del programa? (S/N):");
+
+   if(salir === "s"){
+      boolianito = false;
+   }
+
+   else if(salir === "n"){
+      boolianito = true;
+   }
 }
  
 

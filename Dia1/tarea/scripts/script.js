@@ -109,6 +109,21 @@ else if(menu === 3){
       `));
 
 }
+
+else if(menu === 4){
+   menuGenerarReporteDeGastos = parseInt(prompt(`
+        =============================================
+               Generar Reporte de Gastos
+        =============================================
+        Seleccione el tipo de reporte:
+
+        1. Reporte diario
+        2. Reporte semanal
+        3. Reporte mensual
+        4. Regresar al menú principal
+=============================================
+      `));
+}
  
 
  

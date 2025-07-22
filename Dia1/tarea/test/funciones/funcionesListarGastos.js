@@ -42,3 +42,23 @@ function listarTodosLosGastos(gastos){
 
 listarTodosLosGastos(gastos);
 
+
+
+function filtarPorCategoria(gastos){
+
+  let listaCategoria = []
+  let filtro = parseInt(prompt("Elige la categoria para filtrar 1.comida 2.transporte 3.entretenimiento 4.otros"));
+
+  if(filtro === 1){
+    filtro = "comida"
+    for(let i = 0; i < gastos.length; i++){
+      for( let o in gastos[i]){
+        
+      }
+    }
+  }
+
+}
+
+
+filtarPorCategoria(gastos);

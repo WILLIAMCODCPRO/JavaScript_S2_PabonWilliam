@@ -108,8 +108,12 @@ while(boolianito == true) {
       `));
 
    if(menuListarGastos == 1){
-      listarTodosLosGastos(gastos)
-   };
+      listarTodosLosGastos(gastos);
+   }
+
+   else if(menuListarGastos === 2){
+      
+   }
 
 
    

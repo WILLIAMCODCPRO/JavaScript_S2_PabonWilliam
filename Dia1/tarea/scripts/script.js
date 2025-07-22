@@ -87,12 +87,29 @@ while(boolianito == true) {
 
    if(menuListarGastos == 1){
       listarTodosLosGastos(gastos)
-   } 
+   };
 
 
    
 
- }
+ } 
+
+else if(menu === 3){
+   menuCalcularTotalGastos = parseInt(prompt(`
+           =============================================
+                Calcular Total de Gastos
+           =============================================
+           Seleccione el periodo de cálculo:
+
+           1. Calcular total diario
+           2. Calcular total semanal
+           3. Calcular total mensual
+           4. Regresar al menú principal
+           =============================================
+      `));
+
+}
+ 
 
  
  

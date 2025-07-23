@@ -1,5 +1,5 @@
 import {ingredientes, cateorias, hamburguesa, chefs} from "../baseDeDatos/baseDeDatos.js";
-import { anadirIngrediente } from "../funciones.js/funcionesIngredientes.js";
+import { anadirIngrediente, listarIngredientes } from "../funciones.js/funcionesIngredientes.js";
 
 let boolianito = true;
 
@@ -51,7 +51,8 @@ while(boolianito){
       }
 
       else if(menuIngrediente === 2){
-        
+        listarIngredientes(ingredientes)
+
       }
     }
 

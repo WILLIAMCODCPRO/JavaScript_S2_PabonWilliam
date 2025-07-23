@@ -13,11 +13,23 @@ function anadirIngrediente(ingredientes, nombreIngrediente, descripcionIngredien
 }
 
 
-function listarIngredientes(ingredientes)
+function listarIngredientes(ingredientes){
+    let tablaListarIngredientes = ""
+    for( let i = 0; i < ingredientes.length; i++){
+        tablaListarIngredientes += ` Ingrediente #${i + 1}\n`
+        for(let o in ingredientes[i]){
+            tablaListarIngredientes += `${o}: ${ingredientes[i][o]} \n`
+        }
+        tablaListarIngredientes += "-------------------- \n"
+    }
+
+    alert(tablaListarIngredientes)
+    
+}
 
 
 
 
 
 
-export {anadirIngrediente};
+export {anadirIngrediente, listarIngredientes};

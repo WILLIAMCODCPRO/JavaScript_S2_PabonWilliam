@@ -56,15 +56,15 @@ while(boolianito){
       }
 
       else if(menuIngrediente === 3){
-        listarIngredientes(ingredientes);
-        let ingredienteParaEliminar = prompt( `Escribe el nombre del ingredientes que quieres eliminar`);
+        
+        let ingredienteParaEliminar = prompt( `${listarIngredientes(ingredientes)}Escribe el nombre del ingredientes que quieres eliminar`);
         eliminarIngrediente(ingredientes, ingredienteParaEliminar);
 
       }
 
       else if(menuIngrediente === 4){
         listarIngredientes(ingredientes)
-        let ingredienteParaActualizar = prompt( `Escribe el nombre del ingredientes que quieres actualizar`);
+        let ingredienteParaActualizar = prompt( `${listarIngredientes(ingredientes)}Escribe el nombre del ingredientes que quieres actualizar`);
         actualizarIngrediente(ingredientes, ingredienteParaActualizar);
       }
     }

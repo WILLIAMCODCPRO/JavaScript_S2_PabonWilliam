@@ -72,3 +72,5 @@ let chefs = [
         "especialidad": "Gourmet"
     }
 ]
+
+export {ingredientes, cateorias, hamburguesa, chefs};

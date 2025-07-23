@@ -1,5 +1,5 @@
 import {ingredientes, cateorias, hamburguesa, chefs} from "../baseDeDatos/baseDeDatos.js";
-import { anadirIngrediente, listarIngredientes, eliminarIngrediente } from "../funciones/funcionesIngredientes.js";
+import { anadirIngrediente, listarIngredientes, eliminarIngrediente, actualizarIngrediente } from "../funciones/funcionesIngredientes.js";
 
 let boolianito = true;
 
@@ -56,10 +56,16 @@ while(boolianito){
       }
 
       else if(menuIngrediente === 3){
-        listarIngredientes(ingredientes)
+        listarIngredientes(ingredientes);
         let ingredienteParaEliminar = prompt( `Escribe el nombre del ingredientes que quieres eliminar`);
         eliminarIngrediente(ingredientes, ingredienteParaEliminar);
 
+      }
+
+      else if(menuIngrediente === 4){
+        listarIngredientes(ingredientes)
+        let ingredienteParaActualizar = prompt( `Escribe el nombre del ingredientes que quieres actualizar`);
+        actualizarIngrediente(ingredientes, ingredienteParaActualizar);
       }
     }
 

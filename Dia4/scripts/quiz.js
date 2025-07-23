@@ -1,9 +1,9 @@
-import {ingredientes, cateorias, hamburguesa, chefs} from "../baseDeDatos/baseDeDatos";
+import {ingredientes, cateorias, hamburguesa, chefs} from "../baseDeDatos/baseDeDatos.js";
 
-boolianito = true;
+let boolianito = true;
 
 while(boolianito){
-    menuPrincipal = parseInt(prompt(`
+    let menuPrincipal = parseInt(prompt(`
      
       ¿Que base de datos deseas manipular?
 
@@ -16,5 +16,26 @@ while(boolianito){
       4. Chefs
     
     
-    `))
+    `));
+
+
+    if(menuPrincipal === 1){
+
+        let menuIngrediente = parseInt(prompt(`
+     
+        ¿Que deseas hacer con Ingredientes?
+  
+        1. Añadir
+  
+        2. listar
+  
+        3. eliminar
+  
+        4. actualizar
+      
+      
+      `));
+    }
+
+
 }

@@ -36,9 +36,11 @@ function eliminarIngrediente(ingredientes, ingredienteParaEliminar){
     for( let i = 0; i < ingredientes.length; i++){
 
 
-            if(ingredientes[i]["nombre"] === "Pan"){
+            if(ingredientes[i]["nombre"] === ingredienteParaEliminar){
                 
-                delete ingredientes[i]
+                ingredientes.splice(i, 1); //El método "splice()" modifica directamente el array en esta línea elimina 1 elemento desde la posición i.
+                i--; // Como después de eliminar un elemento en la posición i los siguientes se desplazan a la izquierda se debe restar i para no saltarse el nuevo elemento en esa posición.
+                     
             }
         
     }

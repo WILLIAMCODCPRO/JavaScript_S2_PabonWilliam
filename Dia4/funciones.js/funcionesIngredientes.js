@@ -35,12 +35,12 @@ function eliminarIngrediente(ingredientes, ingredienteParaEliminar){
 
     for( let i = 0; i < ingredientes.length; i++){
 
-        for(let o in ingredientes[i]){
-            if(ingredientes[i][o] = ingredienteParaEliminar){
-                alert(ingredientes[i][o])
+
+            if(ingredientes[i]["nombre"] === "Pan"){
                 
+                delete ingredientes[i]
             }
-        }
+        
     }
 
 

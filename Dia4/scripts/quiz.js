@@ -2,6 +2,7 @@ import {ingredientes, categorias, hamburguesa, chefs} from "../baseDeDatos/baseD
 import { anadirIngrediente, listarIngredientes, eliminarIngrediente, actualizarIngrediente } from "../funciones/funcionesIngredientes.js";
 import { anadirCategoria, listarCategoria, eliminarCategoria, actualizarCategoria } from "../funciones/funcionesCategoria.js";
 import { anadirHamburguesa, listarHamburguesa, eliminarHamburguesa, actualizarHamburguesa } from "../funciones/funcionesHamburguesas.js";
+import { anadirChefs, listarChef, eliminarChefs, actualizarChefs } from "../funciones/funcionesChefs.js";
 let boolianito = true;
 
 while(boolianito){
@@ -165,6 +166,51 @@ while(boolianito){
        
         let hamburguesaParaActualizar = prompt( `${listarHamburguesa(hamburguesa)}Escribe el nombre de la hamburguesa que quieres actualizar`);
         actualizarHamburguesa(hamburguesa, hamburguesaParaActualizar);
+      }
+    }
+
+    if(menuPrincipal === 4){
+
+        let menuChef = parseInt(prompt(`
+     
+        ¿Que deseas hacer con Chefs?
+  
+        1. Añadir
+  
+        2. listar
+  
+        3. eliminar
+  
+        4. actualizar
+      
+      
+      `));
+
+      if(menuChef === 1){
+        let nombreChef = prompt("Escribe el nombre deL Chef");
+
+        let especialidadChef = prompt("Escribe la especialidad del chef");
+
+
+        anadirChefs(chefs, nombreChef, especialidadChef);
+        
+      }
+
+      else if(menuChef === 2){
+        alert(listarChef(chefs));
+
+      }
+
+      else if(menuChef === 3){
+        
+        let chefParaEliminar = prompt( `${listarChef(chefs)}Escribe el nombre del chef que quieres eliminar`);
+        eliminarChefs(chefs, chefParaEliminar);
+
+      }
+
+      else if(menuChef === 4){
+        let chefParaActualizar = prompt( `${listarChef(chefs)}Escribe el nombre del chef que quieres actualizar`);
+        actualizarChefs(chefs, chefParaActualizar);
       }
     }
 

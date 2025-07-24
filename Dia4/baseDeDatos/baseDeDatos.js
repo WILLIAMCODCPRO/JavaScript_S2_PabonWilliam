@@ -36,7 +36,7 @@ let categorias = [
 
 let hamburguesa =  [
     {
-        "nombre": "Clásica",
+        "nombre": "Clasica",
         "categoria": "Clásica",
         "ingredientes": ["Pan", "Carne de res", "Queso cheddar", "Lechuga", "Tomate", "Cebolla", "Mayonesa", "Ketchup"],
         "precio": 10,

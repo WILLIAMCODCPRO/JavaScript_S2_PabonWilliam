@@ -1,6 +1,7 @@
 import {ingredientes, categorias, hamburguesa, chefs} from "../baseDeDatos/baseDeDatos.js";
 import { anadirIngrediente, listarIngredientes, eliminarIngrediente, actualizarIngrediente } from "../funciones/funcionesIngredientes.js";
 import { anadirCategoria, listarCategoria, eliminarCategoria, actualizarCategoria } from "../funciones/funcionesCategoria.js";
+import { anadirHamburguesa, listarHamburguesa, eliminarHamburguesa, actualizarHamburguesa } from "../funciones/funcionesHamburguesas.js";
 let boolianito = true;
 
 while(boolianito){
@@ -69,7 +70,7 @@ while(boolianito){
       }
     }
 
-  if(menuPrincipal === 2){
+    if(menuPrincipal === 2){
 
         let menuCategoria = parseInt(prompt(`
      
@@ -86,7 +87,7 @@ while(boolianito){
       
       `));
 
-  if(menuCategoria === 1){
+      if(menuCategoria === 1){
         let nombreCategoria = prompt("Escribe el nombre de la categoria");
 
         let descripcionCategoria = prompt("Escribe la descripcion de la categoria");
@@ -111,6 +112,59 @@ while(boolianito){
       else if(menuCategoria === 4){
         let categoriaParaActualizar = prompt( `${listarCategoria(categorias)}Escribe el nombre de la categoria que quieres actualizar`);
         actualizarCategoria(categorias, categoriaParaActualizar);
+      }
+    }
+
+    if(menuPrincipal === 3){
+
+        let menuHamburguesa = parseInt(prompt(`
+     
+        ¿Que deseas hacer con Hamburguesa?
+  
+        1. Añadir
+  
+        2. listar
+  
+        3. eliminar
+  
+        4. actualizar
+      
+      
+      `));
+
+      if(menuHamburguesa === 1){
+        let nombreHamburguesa = prompt("Escribe el nombre de la Hamburguesa");
+
+        let categoriaHamburguesa = prompt("Escribe la categoria de la Hamburguesa");
+
+        let ingredientesHamburguesa = prompt("Escribe los ingredientes de las hamburguesas separados por comas")
+
+        let listaIngredientesHamburguesa = ingredientesHamburguesa.split(",") // Se crea una lista donde cada vez que detecta una coma se crea un elmento nuevo
+
+        let precioHamburguea = parseInt(prompt("Pasame el precio de la hamburguesa"));
+
+        let chefHamburguesa = prompt("Pasame el nombre del chef de la hamburguesa");
+
+        anadirHamburguesa(hamburguesa, nombreHamburguesa, categoriaHamburguesa, listaIngredientesHamburguesa, precioHamburguea, chefHamburguesa);
+        
+      }
+
+      else if(menuHamburguesa === 2){
+        alert(listarHamburguesa(hamburguesa));
+
+      }
+
+      else if(menuHamburguesa === 3){
+        
+        let hamburguesaParaEliminar = prompt( `${listarHamburguesa(hamburguesa)}Escribe el nombre de la hamburguesa que quieres eliminar`);
+        eliminarHamburguesa(hamburguesa, hamburguesaParaEliminar);
+
+      }
+
+      else if(menuHamburguesa === 4){
+       
+        let hamburguesaParaActualizar = prompt( `${listarHamburguesa(hamburguesa)}Escribe el nombre de la hamburguesa que quieres actualizar`);
+        actualizarHamburguesa(hamburguesa, hamburguesaParaActualizar);
       }
     }
 

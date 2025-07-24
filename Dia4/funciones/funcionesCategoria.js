@@ -36,8 +36,8 @@ function eliminarCategoria(categorias, categoriaParaEliminar){
 
             if(categorias[i]["nombre"] === categoriaParaEliminar){
                 
-                categorias.splice(i, 1); 
-                i--;  
+                categorias.splice(i, 1);  //El método "splice()" modifica directamente el array en esta línea elimina el primer elemento desde la posición i
+                i--;  // Como despues de eliminar un elemento en la posición i los siguientes se desplazan a la izquierda se debe restar i para no saltarse el nuevo elemento en esa posición
                      
             }
         
@@ -62,7 +62,8 @@ function actualizarCategoria(categorias, categoriaParaActualizar){
                 
               };
 
-             categorias.splice(i,1,nuevaCategoria); 
+             categorias.splice(i,1,nuevaCategoria); // Reemplaza el primer elemento que esta en la posicion i por el nuevo elemento "nuevoIngrediente"
+
 
 
         }

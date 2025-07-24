@@ -19,9 +19,9 @@ let ingredientes = [
     }
 ]
 
-let cateorias = [
+let categorias = [
     {
-        "nombre": "Clásica",
+        "nombre": "Clasica",
         "descripcion": "Hamburguesas clásicas y sabrosas"
     },
     {
@@ -73,4 +73,4 @@ let chefs = [
     }
 ]
 
-export {ingredientes, cateorias, hamburguesa, chefs};
+export {ingredientes, categorias, hamburguesa, chefs};

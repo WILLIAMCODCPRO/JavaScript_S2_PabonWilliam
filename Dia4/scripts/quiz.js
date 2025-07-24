@@ -1,6 +1,6 @@
-import {ingredientes, cateorias, hamburguesa, chefs} from "../baseDeDatos/baseDeDatos.js";
+import {ingredientes, categorias, hamburguesa, chefs} from "../baseDeDatos/baseDeDatos.js";
 import { anadirIngrediente, listarIngredientes, eliminarIngrediente, actualizarIngrediente } from "../funciones/funcionesIngredientes.js";
-
+import { anadirCategoria, listarCategoria, eliminarCategoria, actualizarCategoria } from "../funciones/funcionesCategoria.js";
 let boolianito = true;
 
 while(boolianito){
@@ -51,7 +51,7 @@ while(boolianito){
       }
 
       else if(menuIngrediente === 2){
-        listarIngredientes(ingredientes)
+        alert(listarIngredientes(ingredientes));
 
       }
 
@@ -63,9 +63,54 @@ while(boolianito){
       }
 
       else if(menuIngrediente === 4){
-        listarIngredientes(ingredientes)
+       
         let ingredienteParaActualizar = prompt( `${listarIngredientes(ingredientes)}Escribe el nombre del ingredientes que quieres actualizar`);
         actualizarIngrediente(ingredientes, ingredienteParaActualizar);
+      }
+    }
+
+  if(menuPrincipal === 2){
+
+        let menuCategoria = parseInt(prompt(`
+     
+        ¿Que deseas hacer con Categoria?
+  
+        1. Añadir
+  
+        2. listar
+  
+        3. eliminar
+  
+        4. actualizar
+      
+      
+      `));
+
+  if(menuCategoria === 1){
+        let nombreCategoria = prompt("Escribe el nombre de la categoria");
+
+        let descripcionCategoria = prompt("Escribe la descripcion de la categoria");
+
+
+        anadirCategoria(categorias, nombreCategoria, descripcionCategoria);
+        
+      }
+
+      else if(menuCategoria === 2){
+        alert(listarCategoria(categorias));
+
+      }
+
+      else if(menuCategoria === 3){
+        
+        let categoriaParaEliminar = prompt( `${listarCategoria(categorias)}Escribe el nombre de la categoria que quieres eliminar`);
+        eliminarCategoria(categorias, categoriaParaEliminar);
+
+      }
+
+      else if(menuCategoria === 4){
+        let categoriaParaActualizar = prompt( `${listarCategoria(categorias)}Escribe el nombre de la categoria que quieres actualizar`);
+        actualizarCategoria(categorias, categoriaParaActualizar);
       }
     }
 

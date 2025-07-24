@@ -37,11 +37,14 @@ function eliminarIngrediente(ingredientes, ingredienteParaEliminar){
 
     for( let i = 0; i < ingredientes.length; i++){
 
+        let numeroTablaIngrediente = i + 1
+        
+            
 
-            if(ingredientes[i]["nombre"] === ingredienteParaEliminar){
+            if(numeroTablaIngrediente === ingredienteParaEliminar){
                 
                 ingredientes.splice(i, 1); //El método "splice()" modifica directamente el array en esta línea elimina el primer elemento desde la posición i.
-                i--; // Como despues de eliminar un elemento en la posición i los siguientes se desplazan a la izquierda se debe restar i para no saltarse el nuevo elemento en esa posición.
+                
                      
             }
         
@@ -55,7 +58,8 @@ function eliminarIngrediente(ingredientes, ingredienteParaEliminar){
 function actualizarIngrediente(ingredientes, ingredienteParaActualizar){
 
     for(let i = 0; i < ingredientes.length; i++){
-        if(ingredientes[i]["nombre"] === ingredienteParaActualizar){
+        let numeroTablaIngrediente = i + 1
+        if(numeroTablaIngrediente === ingredienteParaActualizar){
             let nuevoNombreIngrediente = prompt("Pon el nuevo Nombre");
             let nuevaDescripcionIngrediente = prompt("Pon una nueva descripcion");
             let nuevoPrecioIngrediente = parseInt(prompt("Pon el nuevo precio"));

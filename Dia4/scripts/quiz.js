@@ -59,14 +59,14 @@ while(boolianito){
 
       else if(menuIngrediente === 3){
         
-        let ingredienteParaEliminar = prompt( `${listarIngredientes(ingredientes)}Escribe el nombre del ingredientes que quieres eliminar`);
+        let ingredienteParaEliminar = parseInt(prompt( `${listarIngredientes(ingredientes)}Escribe el numero del ingredientes que quieres eliminar`));
         eliminarIngrediente(ingredientes, ingredienteParaEliminar);
 
       }
 
       else if(menuIngrediente === 4){
        
-        let ingredienteParaActualizar = prompt( `${listarIngredientes(ingredientes)}Escribe el nombre del ingredientes que quieres actualizar`);
+        let ingredienteParaActualizar = parseInt(prompt( `${listarIngredientes(ingredientes)}Escribe el numero del ingredientes que quieres actualizar`));
         actualizarIngrediente(ingredientes, ingredienteParaActualizar);
       }
     }
@@ -105,13 +105,13 @@ while(boolianito){
 
       else if(menuCategoria === 3){
         
-        let categoriaParaEliminar = prompt( `${listarCategoria(categorias)}Escribe el nombre de la categoria que quieres eliminar`);
+        let categoriaParaEliminar = parseInt(prompt( `${listarCategoria(categorias)}Escribe el numero de la categoria que quieres eliminar`));
         eliminarCategoria(categorias, categoriaParaEliminar);
 
       }
 
       else if(menuCategoria === 4){
-        let categoriaParaActualizar = prompt( `${listarCategoria(categorias)}Escribe el nombre de la categoria que quieres actualizar`);
+        let categoriaParaActualizar = parseInt(prompt( `${listarCategoria(categorias)}Escribe el numero de la categoria que quieres actualizar`));
         actualizarCategoria(categorias, categoriaParaActualizar);
       }
     }
@@ -157,14 +157,14 @@ while(boolianito){
 
       else if(menuHamburguesa === 3){
         
-        let hamburguesaParaEliminar = prompt( `${listarHamburguesa(hamburguesa)}Escribe el nombre de la hamburguesa que quieres eliminar`);
+        let hamburguesaParaEliminar = parseInt(prompt( `${listarHamburguesa(hamburguesa)}Escribe el numero de la hamburguesa que quieres eliminar`));
         eliminarHamburguesa(hamburguesa, hamburguesaParaEliminar);
 
       }
 
       else if(menuHamburguesa === 4){
        
-        let hamburguesaParaActualizar = prompt( `${listarHamburguesa(hamburguesa)}Escribe el nombre de la hamburguesa que quieres actualizar`);
+        let hamburguesaParaActualizar = parseInt(prompt( `${listarHamburguesa(hamburguesa)}Escribe el numero de la hamburguesa que quieres actualizar`));
         actualizarHamburguesa(hamburguesa, hamburguesaParaActualizar);
       }
     }
@@ -203,13 +203,13 @@ while(boolianito){
 
       else if(menuChef === 3){
         
-        let chefParaEliminar = prompt( `${listarChef(chefs)}Escribe el nombre del chef que quieres eliminar`);
+        let chefParaEliminar = parseInt(prompt( `${listarChef(chefs)}Escribe el numero del chef que quieres eliminar`));
         eliminarChefs(chefs, chefParaEliminar);
 
       }
 
       else if(menuChef === 4){
-        let chefParaActualizar = prompt( `${listarChef(chefs)}Escribe el nombre del chef que quieres actualizar`);
+        let chefParaActualizar = parseInt(prompt( `${listarChef(chefs)}Escribe el numero del chef que quieres actualizar`));
         actualizarChefs(chefs, chefParaActualizar);
       }
     }

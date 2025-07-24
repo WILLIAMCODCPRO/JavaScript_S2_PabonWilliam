@@ -33,11 +33,13 @@ function eliminarCategoria(categorias, categoriaParaEliminar){
 
     for( let i = 0; i < categorias.length; i++){
 
+        let numeroTablaCategoria = i + 1
 
-            if(categorias[i]["nombre"] === categoriaParaEliminar){
+
+            if(numeroTablaCategoria === categoriaParaEliminar){
                 
                 categorias.splice(i, 1);  //El método "splice()" modifica directamente el array en esta línea elimina el primer elemento desde la posición i
-                i--;  // Como despues de eliminar un elemento en la posición i los siguientes se desplazan a la izquierda se debe restar i para no saltarse el nuevo elemento en esa posición
+                
                      
             }
         
@@ -51,7 +53,8 @@ function eliminarCategoria(categorias, categoriaParaEliminar){
 function actualizarCategoria(categorias, categoriaParaActualizar){
 
     for(let i = 0; i < categorias.length; i++){
-        if(categorias[i]["nombre"] === categoriaParaActualizar){
+        let numeroTablaCategoria = i + 1
+        if(numeroTablaCategoria === categoriaParaActualizar){
             let nuevoNombreCategoria = prompt("Pon el nuevo Nombre");
             let nuevaDescripcionCategoria = prompt("Pon una nueva descripcion");
             

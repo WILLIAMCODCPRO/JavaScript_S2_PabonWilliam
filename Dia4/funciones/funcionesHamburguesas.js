@@ -36,11 +36,13 @@ function eliminarHamburguesa(hamburguesa, hamburguesaParaEliminar){
 
     for( let i = 0; i < hamburguesa.length; i++){
 
+        let numeroTablaHamburguesa = i + 1
 
-            if(hamburguesa[i]["nombre"] === hamburguesaParaEliminar){
+
+            if(numeroTablaHamburguesa === hamburguesaParaEliminar){
                 
                 hamburguesa.splice(i, 1); 
-                i--; 
+                
                      
             }
         
@@ -54,7 +56,8 @@ function eliminarHamburguesa(hamburguesa, hamburguesaParaEliminar){
 function actualizarHamburguesa(hamburguesa, hamburguesaParaActualizar){
 
     for(let i = 0; i < hamburguesa.length; i++){
-        if(hamburguesa[i]["nombre"] === hamburguesaParaActualizar){
+        let numeroTablaHamburguesa = i + 1
+        if(numeroTablaHamburguesa === hamburguesaParaActualizar){
             let nuevoNombreHamburguesa = prompt("Pon el nuevo Nombre");
             let nuevaCategoriaHamburguesa = prompt("Pon una nueva categoria");
             let nuevosIngredientesHamburguesa = prompt("Pon los nuevos ingredientes separados por comas");

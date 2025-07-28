@@ -1,0 +1,1 @@
+let personaje = parent(prompt("Escribe el ID del personaje"));

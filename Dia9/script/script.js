@@ -4,8 +4,8 @@ let pokemonActual = " "
 function buscarPokemon(){
     let pokemon = document.getElementById("buscar");
 
-    pokemon.addEventListener("keyup", function(event) {
-        if (event.key === "Enter") {
+    pokemon.addEventListener("keyup", function(presionarEnter) {
+        if (presionarEnter.key === "Enter") {
              let pokemonParaBuscar = pokemon.value
              let llamadaApi = new XMLHttpRequest();
              llamadaApi.open("GET", `https://pokeapi.co/api/v2/pokemon/${pokemonParaBuscar}/` );

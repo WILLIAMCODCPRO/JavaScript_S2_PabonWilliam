@@ -5,4 +5,35 @@
     box-sizing: border-box;
     font-family: 'Oxanium', cursive;
     
-    }
+}
+
+
+.pokedex{
+  position: relative;
+  background-image: url('../img/pokedex.png');
+  background-size: cover;
+  width: 425px;
+  height: 637px;
+}
+
+.buscar {
+  position: absolute;
+  top: 410px;
+  left: 30px;
+  width: 80%;
+}
+
+.botones {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  top: 500px;
+}
+
+.pokemon{
+  position: absolute;
+  top: 150px;
+  left: 90px;
+}

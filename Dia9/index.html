@@ -9,13 +9,17 @@
 <body>
     <div class="pokedex">
 
-        <img src="./img/descargar.png" class="pokemon" id="pokemon">
+        <div class="contenedorPokemon">
+            <img src="./img/descargar.png" class="pokemon" id="pokemon">
+        </div>
+
+        <p class="numeroNombre" id="numeroNombre">55 - Hola</p>
 
         <input type="text" class="buscar" placeholder="Nombre o numero" id="buscar">
 
         <div class="botones">
-            <button>Prev</button>
-            <button>Next</button>
+            <button id="antes" onclick="anteriorPokemon()">Prev</button>
+            <button id="despues" onclick="siguientePokemon()">Next</button>
         </div>
      
     </div>

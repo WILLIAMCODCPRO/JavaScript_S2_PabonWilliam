@@ -15,9 +15,13 @@ function buscarPokemon(){
                 let datosPokemon = JSON.parse(llamadaApi.responseText);
 
                 let spritesPokemon = datosPokemon["sprites"]["other"]["showdown"]["front_default"];
+                let idPokemon = datosPokemon["id"]
+                let namePokemon = datosPokemon["name"]
 
                
                document.getElementById("pokemon").src = spritesPokemon;
+               document.getElementById("numeroNombre").textContent = `${idPokemon} - ${namePokemon}`;
+               
 
                pokemonActual = datosPokemon["id"]
                
@@ -47,9 +51,12 @@ function siguientePokemon (){
                 let datosPokemon = JSON.parse(llamadaApi.responseText);
 
                 let spritesPokemon = datosPokemon["sprites"]["other"]["showdown"]["front_default"];
+                let idPokemon = datosPokemon["id"]
+                let namePokemon = datosPokemon["name"]
 
                
                document.getElementById("pokemon").src = spritesPokemon;
+               document.getElementById("numeroNombre").textContent = `${idPokemon} - ${namePokemon}`;
 
                pokemonActual = datosPokemon["id"]
                
@@ -77,9 +84,12 @@ function anteriorPokemon (){
                 let datosPokemon = JSON.parse(llamadaApi.responseText);
 
                 let spritesPokemon = datosPokemon["sprites"]["other"]["showdown"]["front_default"];
+                let idPokemon = datosPokemon["id"]
+                let namePokemon = datosPokemon["name"]
 
                
                document.getElementById("pokemon").src = spritesPokemon;
+               document.getElementById("numeroNombre").textContent = `${idPokemon} - ${namePokemon}`;
 
                pokemonActual = datosPokemon["id"]
                

@@ -24,6 +24,8 @@
   top: 410px;
   left: 30px;
   width: 80%;
+
+  
 }
 
 .botones {
@@ -35,11 +37,21 @@
   top: 500px;
 }
 
-.pokemon{
+.contenedorPokemon {
   position: absolute;
-  top: 150px;
-  left: 90px;
+  top: 170px;
+  left: 120px;
+  
+  
+  
 }
+
+.pokemon{
+  width: 150px;
+  height: 150px;
+}
+
+
 
 .numeroNombre {
   position: absolute;

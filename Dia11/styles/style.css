@@ -16,3 +16,18 @@ body {
     top: 400px;
     
 }
+
+.cartas{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.cartas img{
+    width: 226px;
+    height: 314px;
+}
+
+button{
+    margin-top: 20px;
+}

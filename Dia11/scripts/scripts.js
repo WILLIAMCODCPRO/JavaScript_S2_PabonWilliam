@@ -1,17 +1,21 @@
+import { sacarCartas } from "./funciones.js";
 let puntosJugador = "";
 let puntosMaquina = "";
+let idBaraja = "";
 
-let llamarCartas = new XMLHttpRequest();
+let llamarBarajaDeCartas = new XMLHttpRequest();
 
-llamarCartas.open("GET", "https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1");
+llamarBarajaDeCartas.open("GET", "https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1");
 
-llamarCartas.onreadystatechange = function () {
+llamarBarajaDeCartas.onreadystatechange = function () {
 
-    if(llamarCartas.readyState === 4 && llamarCartas.status === 200) {
+    if(llamarBarajaDeCartas.readyState === 4 && llamarBarajaDeCartas.status === 200) {
         try{
 
-            let barajaDeCartas = JSON.parse(llamarCartas.responseText)
-            console.log(barajaDeCartas)
+            let barajaDeCartas = JSON.parse(llamarBarajaDeCartas.responseText)
+            idBaraja = barajaDeCartas["deck_id"]
+            console.log(idBaraja)
+        
 
 
 
@@ -25,4 +29,8 @@ llamarCartas.onreadystatechange = function () {
 
 }
 
-llamarCartas.send()
+document.getElementById("botonSacarCartas").addEventListener("click", function () {
+  sacarCartas(idBaraja); 
+});
+llamarBarajaDeCartas.send()
+

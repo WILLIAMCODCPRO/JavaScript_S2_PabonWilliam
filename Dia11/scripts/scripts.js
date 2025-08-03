@@ -1,6 +1,5 @@
-import { sacarCartas } from "./funciones.js";
-let puntosJugador = "";
-let puntosMaquina = "";
+import { sacarCartas} from "./funciones.js";
+
 let idBaraja = "";
 
 let llamarBarajaDeCartas = new XMLHttpRequest();
@@ -32,5 +31,8 @@ llamarBarajaDeCartas.onreadystatechange = function () {
 document.getElementById("botonSacarCartas").addEventListener("click", function () {
   sacarCartas(idBaraja); 
 });
+
+
+
 llamarBarajaDeCartas.send()
 

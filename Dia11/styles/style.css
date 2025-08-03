@@ -1,12 +1,18 @@
- body {
-      text-align: center;
-      background: blue;
-      color: white;
-    }
+body {
+    text-align: center;
+    background: green;
+    color: white;
+}
 
  
+.marcador {
+    margin: 10px;
 
-    .marcador {
-      margin: 10px;
+}
 
-    }
+.reglas {
+    position: absolute;
+    text-align: left;
+    top: 400px;
+    
+}

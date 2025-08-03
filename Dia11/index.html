@@ -7,14 +7,30 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <h1>Guerra de Cartas</h1>
+  <h1>Guerra de Cartas Simple</h1>
 
-  <div class="marcador">Tu: 0 | Oponente: 0</div>
+  <div class="reglas">
+  <h1>Reglas de Guerra de Cartas</h1>
+  <ul>
+    <li>Cada jugador saca una carta del mazo</li>
+    <li>Se comparan los valores de las cartas</li>
+    <li>A = 14, K = 13, Q = 12, J = 11 el resto de cartas vale el mismo numero</li>
+    <li>El jugador con la carta más alta gana 1 punto</li>
+    <li>Si hay un enpate nadie gana un punto</li>
+    <li>Gana el que llega a 10 puntos primero</li>
+  </ul>
+</div>
 
-  <div class="cartas">
+    
+
+  <div class="marcador" id="marcador">Tu: 0 | Oponente: 0</div>
+
+  <div class="cartas" id="cartas">
    
   </div>
 
   <button onclick="jugar()">Jugar</button>
+  
 </body>
+<script src="./scripts/scripts.js"></script>
 </html>

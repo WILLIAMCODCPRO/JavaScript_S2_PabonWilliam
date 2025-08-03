@@ -47,7 +47,13 @@ function compararCartas(lasDosCartas){
     puntosMaquina += 1
     
   }
-  else puntosJugador += 1 
+  else if(valorCartaUno < valorCartaDos){
+    puntosJugador += 1
+  }
+
+  else {
+    // Nadie gana puntos
+  }
 
 
   document.getElementById("marcador").textContent = `Tu: ${puntosJugador} | Maquina: ${puntosMaquina}`;

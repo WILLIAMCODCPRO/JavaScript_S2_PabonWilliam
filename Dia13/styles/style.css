@@ -1,0 +1,26 @@
+*{
+    text-align: center;
+}
+
+.tarjetaPersonaje {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+ 
+}
+
+
+.tarjetaSola {
+  width: 200px;
+
+}
+
+
+
+.tarjetaSola img {
+  width: 100%;
+}
+
+

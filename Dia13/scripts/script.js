@@ -8,6 +8,7 @@ function buscarHeroe(){
         if(listaDeheroes.readyState === 4 && listaDeheroes.status === 200){
             try{
                 datosHeroe = JSON.parse(listaDeheroes.responseText);
+                document.getElementById("tarjetaPersonaje").innerHTML = '';
                 for(let i = 0; i < datosHeroe["results"].length; i++){
                     let name = datosHeroe["results"][i]["name"]
                     let image = datosHeroe["results"][i]["image"]["url"]
@@ -16,7 +17,7 @@ function buscarHeroe(){
                         <div>
                         <img src="${image}" alt="${name}">
                         </div>
-                        <h2>${name}</h2>
+                        <p>${name}<p>
                        </div>
                         
                         `)

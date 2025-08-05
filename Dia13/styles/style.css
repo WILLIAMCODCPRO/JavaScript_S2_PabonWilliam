@@ -6,21 +6,23 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
-  padding: 20px;
+  gap: 40px;
+  margin-top: 20px;
+  
  
 }
 
 
 .tarjetaSola {
-  width: 200px;
+ width: 15vw;
+ border: solid 2px red;
 
 }
 
 
 
 .tarjetaSola img {
-  width: 100%;
+  width: 15vw;
 }
 
 

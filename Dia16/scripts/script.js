@@ -119,4 +119,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const data = await fetchData();
         displayCapsula(data);
     }
+
+
+    async function anadirSubTarea() {
+    const id = await fetch(`https://689a1712fed141b96ba1d4d9.mockapi.io/tareas/v1/lista/${Id}`)
+    
+    await fetch(`https://689a1712fed141b96ba1d4d9.mockapi.io/tareas/v1/lista/${Id}`, {
+        method: 'PUT',
+    });
+    
+}
 });
